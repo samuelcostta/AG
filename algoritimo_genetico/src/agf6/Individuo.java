@@ -10,15 +10,15 @@ public class Individuo {
     public Individuo() {
         this.genes = new double[2];
         this.fitness = 0.0;
-        this.valorMaximo = 100.0;
-        this.valorMinimo = -100.0;
+        this.valorMaximo = 5.12;
+        this.valorMinimo = -5.12;
     }
 
     public Individuo(double[] genes) {
         this.genes = genes;
         this.fitness = 0.0;
-        this.valorMinimo = -100.0;
-        this.valorMaximo = 100.0;
+        this.valorMinimo = -5.12;
+        this.valorMaximo = 5.12;
     }
 
     public Individuo(double limiteInferior, double limiteSuperior) {

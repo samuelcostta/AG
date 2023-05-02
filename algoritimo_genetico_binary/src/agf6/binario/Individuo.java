@@ -5,7 +5,7 @@ public class Individuo {
     private double fitness;
 
     public Individuo() {
-        this.genes = new int[2];
+        this.genes = new int[44];
         this.fitness = 0.0;
     }
 
