@@ -5,8 +5,8 @@ public class Populacao {
     private int tamanho;
 
     public Populacao() {
-        this.populacao = new Individuo[100];
-        this.tamanho = 100;
+        this.populacao = new Individuo[20];
+        this.tamanho = 20;
     }
 
     public Populacao(int tamanho) {

@@ -119,7 +119,7 @@ public class AG {
             Individuo ind = populacao.getIndividuo(i);
             double x = ind.getGene(0);
             double y = ind.getGene(1);
-            double fitness = (1 + Math.cos(12 * Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)))) / (0.5 * (Math.pow(x, 2) + Math.pow(y, 2)) + 2);
+            double fitness = -(1 + Math.cos(12 * Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)))) / (0.5 * (Math.pow(x, 2) + Math.pow(y, 2)) + 2);
             ind.setFitness(fitness);
         }
     }

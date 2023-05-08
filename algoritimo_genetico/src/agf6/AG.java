@@ -1,8 +1,8 @@
 package agf6;
 
 public class AG {
-	private static int geracao = 100;
-    private static int tamPopulacao = 100;
+	private static int geracao = 20;
+    private static int tamPopulacao = 20;
     private static double taxaCrossover = 0.6;
     private static double taxaMutacao = 0.010;
     static long tempoInicial = System.currentTimeMillis();
@@ -82,7 +82,7 @@ public class AG {
             Individuo ind = populacao.getIndividuo(i);
             double x = ind.getGene(0);
             double y = ind.getGene(1);
-            double fitness = (1 + Math.cos(12 * Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)))) / (0.5 * (Math.pow(x, 2) + Math.pow(y, 2)) + 2);
+            double fitness = -(1 + Math.cos(12 * Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)))) / (0.5 * (Math.pow(x, 2) + Math.pow(y, 2)) + 2);
             ind.setFitness(fitness);
         }
     }
